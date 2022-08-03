@@ -1,5 +1,7 @@
 FROM debian:bullseye-slim
 
+LABEL "org.opencontainers.image.description": "Debian image with dependencies required to build ACCESS-OM3."
+
 # Install required packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
   wget \
