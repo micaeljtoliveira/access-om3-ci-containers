@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   git \
   ca-certificates \
   pkg-config \
+  patch \
   && rm -rf /var/lib/apt/lists/*
 
 # We will run everything else with a non-root user for extra security
